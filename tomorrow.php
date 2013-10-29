@@ -13,15 +13,16 @@ $real_menu[2] = $cardapios[2];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
   </head>
   <body>
     <div class="container">
       <div class="row-fluid">
         <div class="span12">
           <h1>What to eat.</h1>
-          <h3>
+          <h2>
            Amanhã  <?=$real_menu[0]['ementas'][1]['data'];?>
-          </h3>
+          </h2>
         </div>
       </div>
       <div class="row-fluid"></div>
@@ -33,7 +34,7 @@ $real_menu[2] = $cardapios[2];
           <?php endif; ?>
           <?php foreach ($cantina['ementas'][1]['pratos'] as $prato): ?>
             <li>
-              [<?=$prato['tipo_descr'];?>]
+              <span class="tipo_descr">[<?=$prato['tipo_descr'];?>]</span>
               <?php print_r($prato['descricao']);?> 
             </li>
           <?php endforeach; ?>
