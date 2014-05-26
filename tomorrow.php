@@ -28,6 +28,7 @@ $real_menu[2] = $cardapios[2];
       <div class="row-fluid"></div>
       <?php foreach ($real_menu as $cantina): ?>
         <h3><?=$cantina['descricao'];?></h3>
+	  <h5><?=$cantina['horario'];?></h5>
         <ul>
           <?php if( empty($cantina['ementas'][1]['pratos'])): ?>
             <li>Vai comer a outro lado.</li>
